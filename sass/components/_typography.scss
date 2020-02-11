@@ -1,0 +1,55 @@
+// Typography Section Starts
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+
+$primary-font : 'Open Sans', sans-serif;
+$header-font : 'Roboto', sans-serif;
+
+body{
+    font-family: $primary-font !important;
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    color:#444;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $header-font;
+    font-weight: 400;
+    overflow:hidden;
+	line-height: 1.2!important;
+	margin:15px 0px 10px; 
+}
+
+h3,h4,h5,h6{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+	font-size:32px;
+}
+h3{
+	font-size:28px;
+}
+h4{
+	font-size:24px;
+}
+h5{
+	font-size:20px;
+}
+h6{
+	font-size:16px;
+}
+input, textarea{
+	outline:none;
+}
+p, li{
+    line-height: 1.7;
+    color:#444;
+}
+
+// Typography section Ends

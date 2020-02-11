@@ -1,0 +1,32 @@
+.footer{
+    background-color: $footer-bg-color;   
+    p{
+        color: #fff;
+    } 
+}
+
+.links{
+    a{
+        color:$footer-link-color;
+        &:hover{
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    i{
+        &:hover{
+            color:$footer-link-hover-color;
+        }
+    }
+    
+    .copyright{
+        &:hover{
+            color:$quaternary-color;
+        }
+    }
+    @media(max-width: 575px){
+        text-align: center !important;
+        margin:10px 0px;
+    }
+}
+
