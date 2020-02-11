@@ -7,16 +7,82 @@
 }
 
 
+// .main-section{
+//     //  background: linear-gradient(to right, rgba(106,179,252,1) 0%, rgba(3,57,206,1) 100%);
+//      background-repeat: no-repeat;
+//      background-size: cover;
+//      background-blend-mode: multiply;
+//     // background-image: url('https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png');
+//     background-image: url('https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png');
+//     background-repeat: repeat-x;
+//     // animation: building 5s linear infinite;
+//     // background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-full-technology-city-background-material-sensecitybuildingbuildingbackground-image_69106.jpg');
+//     .main-heading{
+//         color:$whiteHeading;
+//         font-size: 66px;
+//         font-weight: 600;
+//     }
+//     .main-text{
+//         font-weight: 500;
+//         font-size: 18px;
+//     }
+//     &.multiply{
+//         background-color:#00a6cc73;
+//     }
+// }
+
+// .background-wrapper{
+//     margin-top:76px;
+//     min-height: 100vh;
+//     background-image: url('./../img/bike.png');
+//     // background-image: url('./../img/delivery.png');
+//     background-repeat: no-repeat;
+//     background-size: 750px;
+//     background-blend-mode: multiply;
+//     // background-position-x: right;    
+//     background-position-x: 600px;
+//     background-position-y: center;
+//     // animation: bike 5s ease-in  infinite;
+//     @media(max-width:575px){
+//         padding: 20px 0px;
+//     }
+// }
+
+
+
 .main-section{
-    //  background: linear-gradient(to right, rgba(106,179,252,1) 0%, rgba(3,57,206,1) 100%);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-blend-mode: multiply;
-    // background-image: url('https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png');
-    background-image: url('https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png');
-    background-repeat: repeat-x;
-    // animation: building 5s linear infinite;
-    // background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-full-technology-city-background-material-sensecitybuildingbuildingbackground-image_69106.jpg');
+    min-height: 100vh;
+    position: relative;
+    &.bg-building-img{
+        background-image: url('https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png'); 
+        background-repeat: repeat-x;
+        background-blend-mode: overlay; 
+        background-size: cover; 
+        
+    }
+    &.multiply{
+        background-color:#00a6cc73;
+    }
+    .delivery-bike{
+        background-image: url('./../img/bike.png');
+        background-repeat: no-repeat;
+        background-size: 750px;
+        background-position-x: 620px;
+        background-position-y: center;
+        min-height: 100vh;
+        animation: bike 3s ease-in-out infinite;
+        position: absolute;
+        width: 100%;
+        @media(min-width:1500px){
+            background-position-x: 900px;
+        }
+    }
+    .main-content{
+        min-height: 100vh;
+        @media(max-width:575px){
+            padding: 20px 0px;
+        }
+    }
     .main-heading{
         color:$whiteHeading;
         font-size: 66px;
@@ -26,40 +92,14 @@
         font-weight: 500;
         font-size: 18px;
     }
-    &.multiply{
-        background-color:#00a6cc73;
-    }
 }
-@keyframes building{
+@keyframes bike{
     100%{
-        transform: translateX(-500px);
-    }
-    0%{
-        
-    }
-}
-.background-wrapper{
-    margin-top:76px;
-    min-height: 100vh;
-    background-image: url('./../img/bike.png');
-    // background-image: url('./../img/delivery.png');
-    background-repeat: no-repeat;
-    background-size: 750px;
-    background-blend-mode: multiply;
-    // background-position-x: right;    
-    background-position-x: 600px;
-    background-position-y: center;
-    // animation: bike 5s ease-in  infinite;
-    @media(max-width:575px){
-        padding: 20px 0px;
+        transform: translate(-5%,-2%);
     }
 }
 
-@keyframes bike{
-    100%{
-        transform: translateX(-100%);
-    }
-}
+
 
 .product-section{
     background: linear-gradient(to right, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 0%, rgba(227,243,255,1) 100%);
@@ -203,6 +243,7 @@ a{
 
 .contact-section{
     background: linear-gradient(45deg, rgba(250,247,250,1) 0%, rgba(250,247,250,1) 6%, rgba(250,247,250,1) 6%, rgba(250,247,250,1) 7%, rgba(250,247,250,1) 28%, rgba(204,255,252,1) 58%, rgba(204,255,252,1) 100%);
+    min-height: 100vh;
 }
 
 .call-to-action-btn{

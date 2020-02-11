@@ -6,11 +6,33 @@
   margin: 0; }
 
 .main-section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-image: url("https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png");
-  background-repeat: repeat-x; }
+  min-height: 100vh;
+  position: relative; }
+  .main-section.bg-building-img {
+    background-image: url("https://pngimage.net/wp-content/uploads/2018/05/animated-building-png-7.png");
+    background-repeat: repeat-x;
+    background-blend-mode: overlay;
+    background-size: cover; }
+  .main-section.multiply {
+    background-color: #00a6cc73; }
+  .main-section .delivery-bike {
+    background-image: url("./../img/bike.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position-x: 620px;
+    background-position-y: center;
+    min-height: 100vh;
+    animation: bike 3s ease-in-out infinite;
+    position: absolute;
+    width: 100%; }
+    @media (min-width: 1500px) {
+      .main-section .delivery-bike {
+        background-position-x: 900px; } }
+  .main-section .main-content {
+    min-height: 100vh; }
+    @media (max-width: 575px) {
+      .main-section .main-content {
+        padding: 20px 0px; } }
   .main-section .main-heading {
     color: #fff;
     font-size: 66px;
@@ -18,28 +40,10 @@
   .main-section .main-text {
     font-weight: 500;
     font-size: 18px; }
-  .main-section.multiply {
-    background-color: #00a6cc73; }
-
-@keyframes building {
-  100% {
-    transform: translateX(-500px); } }
-.background-wrapper {
-  margin-top: 76px;
-  min-height: 100vh;
-  background-image: url("./../img/bike.png");
-  background-repeat: no-repeat;
-  background-size: 750px;
-  background-blend-mode: multiply;
-  background-position-x: 600px;
-  background-position-y: center; }
-  @media (max-width: 575px) {
-    .background-wrapper {
-      padding: 20px 0px; } }
 
 @keyframes bike {
   100% {
-    transform: translateX(-100%); } }
+    transform: translate(-5%, -2%); } }
 .product-section {
   background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 0%, white 0%, #e3f3ff 100%);
   min-height: 100vh;
@@ -147,7 +151,8 @@ a {
     border-radius: 5px; }
 
 .contact-section {
-  background: linear-gradient(45deg, #faf7fa 0%, #faf7fa 6%, #faf7fa 6%, #faf7fa 7%, #faf7fa 28%, #ccfffc 58%, #ccfffc 100%); }
+  background: linear-gradient(45deg, #faf7fa 0%, #faf7fa 6%, #faf7fa 6%, #faf7fa 7%, #faf7fa 28%, #ccfffc 58%, #ccfffc 100%);
+  min-height: 100vh; }
 
 .call-to-action-btn {
   background: #372F5C;
