@@ -183,6 +183,8 @@ a {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75); }
+  .login-form-section .img-fluid {
+    object-fit: cover; }
 
 body {
   font-family: "Open Sans", sans-serif !important;
