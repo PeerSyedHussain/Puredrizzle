@@ -246,5 +246,9 @@ p, li {
   .links {
     text-align: center !important;
     margin: 10px 0px; } }
+.links.login-page-links a {
+  color: #005b91; }
+.links.login-page-links i:hover {
+  color: #59c1ff; }
 
 /*# sourceMappingURL=style.css.map */
